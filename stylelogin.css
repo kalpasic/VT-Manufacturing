@@ -1,0 +1,138 @@
+/* General reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #fff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 400px;
+}
+
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.greeting {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tab-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.tab-button.active, .tab-button:hover {
+    background-color: #ff3d3d;
+}
+
+.form {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form.active {
+    display: block;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff3d3d;
+}
+
+.error, .success {
+    color: #f8d7da;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tab-button, button[type="submit"] {
+    background: #FF6A3D;
+    color: white;
+    font-weight: bold;
+}
+
+.tab-button.active, button[type="submit"]:hover {
+    background: #FF3D2E;
+}
+
+/* Company Name */
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Custom styling for input and select fields */
+input[type="text"], input[type="password"], select {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Adjust padding for form-container */
+.form-container {
+    padding: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .form-container {
+        width: 100%;
+        padding: 15px;
+    }
+}

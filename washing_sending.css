@@ -1,0 +1,111 @@
+/* Styling for the form and table elements */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 20px;
+    color: #333;
+}
+
+/* Heading Styles */
+h2 {
+    color: #4A90E2;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Table Styling for Form */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.form-table th,
+.form-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.form-table th {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+.form-table td {
+    background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea,
+input[list] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    color: #fff;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #357ABD;
+}
+
+textarea {
+    resize: vertical;
+    height: 60px;
+}
+
+/* Table Styling for Displaying Records */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4A90E2;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-table,
+    table {
+        font-size: 14px;
+    }
+    
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,91 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("washing.jpg");
+    background: linear-gradient(45deg, #56abff, #a8e0ff);
+
+}
+
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left panel styling */
+.left-panel {
+    flex: 1;
+    padding: 40px;
+    background-color: linear-gradient(to bottom right, #2c3e50, #34495e); /* Light grey, semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive-image {
+    max-width: 100%; /* Ensures the image doesn't overflow the panel */
+    height: auto; /* Maintains the aspect ratio */
+    margin-bottom: 20px; /* Adds some space below the image */
+}
+
+
+.company-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333333;
+}
+
+.welcome-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555555;
+    text-align: center;
+}
+
+/* Right panel styling */
+.right-panel {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(68, 108, 179, 0.9); /* Soft blue, semi-transparent background */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.tabs button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #4458dc;
+    background-color: #f9f9f9; /* Light grey button background */
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 80%;
+}
+
+.tabs button:hover {
+    background-color: #e0e0e0; /* Darker grey on hover */
+}

@@ -1,0 +1,126 @@
+/* Reset some basic styles */
+body, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styles */
+body {
+    background: linear-gradient(135deg, #1e1e2f, #252540, #2b2b50, #333361); /* Soft gradient background */
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center; /* Center all text */
+}
+
+/* Company Name Styles */
+.company-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Greeting Styles */
+.greeting {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Form container styles */
+.form-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 300px; /* Adjust the width as necessary */
+}
+
+/* Tab button styles */
+.tab-button {
+    background: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.tab-button.active {
+    background: #74ebd5;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Form styles */
+.form {
+    display: none; /* Hide forms by default */
+}
+
+.form.active {
+    display: block; /* Show active form */
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #74ebd5; /* Change border color on focus */
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #74ebd5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #60b8a5; /* Darker shade on hover */
+}
+
+/* Success and error message styles */
+.success {
+    color: green;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Center all text in the form */
+.form-container * {
+    text-align: center; /* Center text for all elements in the form container */
+}

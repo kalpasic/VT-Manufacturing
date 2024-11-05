@@ -1,0 +1,139 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for Summary */
+.summary-container {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Header Styling */
+h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Filter Form Styling */
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-form input[type="text"],
+.filter-form input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.filter-form button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Print Button Styling */
+.print-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+    background-color: #218838;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+table thead th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Shortcut Link Styling */
+.shortcut-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.shortcut-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.shortcut-button:hover {
+    background-color: #0056b3;
+}
+/* Highlighted shortcut container */
+.shortcut-container {
+    background-color: #f9f9f9; /* Light background for emphasis */
+    border: 2px solid #007bff; /* Border color to match primary theme */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px; /* Inner spacing */
+    position: absolute; /* Position it in the corner */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center align the text */
+}

@@ -1,0 +1,168 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header and Form Styling */
+h2 {
+    color: #4000ff;
+    text-align: center;
+    margin: 4px;
+}
+/* Styles for the Machine Number section */
+label[for="machine_number"] {
+    font-weight: bold; /* Make label bold */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+input[list="machine-numbers"] {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[list="machine-numbers"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+datalist option {
+    padding: 10px; /* Padding for options */
+}
+
+p {
+    color: #555;
+    text-align: center;
+    margin: 4px;
+}
+
+/* Success and Error Message Styling */
+.success {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Shortcut Button (Return to View Needle Stock) Styling */
+.shortcut-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.shortcut-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.shortcut-button:hover {
+    background-color: #0056b3;
+}
+
+/* Logout Link Styling */
+.logout-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-container a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logout-container a:hover {
+    color: #0056b3;
+}
+/* Highlighted shortcut container */
+.shortcut-container {
+    background-color: #f9f9f9; /* Light background for emphasis */
+    border: 2px solid #007bff; /* Border color to match primary theme */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px; /* Inner spacing */
+    position: absolute; /* Position it in the corner */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center align the text */
+}

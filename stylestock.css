@@ -1,0 +1,109 @@
+/* Basic reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    text-align: center; /* Center text for the body */
+}
+
+/* Header styling */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Welcome message styling */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Tabs styling */
+.tabs {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox to center tabs */
+    justify-content: center; /* Center tabs horizontally */
+}
+
+.tabs a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px; /* Space between tabs */
+    transition: background-color 0.3s ease;
+}
+
+.tabs a:hover {
+    background-color: #0056b3;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* Center text in table cells */
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Low stock styling */
+.low-stock {
+    background-color: red; /* Set background color to red for low stock */
+    color: white; /* Change text color to white for better contrast */
+}
+
+/* Content container styling */
+.content-container {
+    margin-top: 20px;
+}
+
+/* Logout container styling */
+.logout-container {
+    position: absolute; /* Positioning it absolutely */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+}
+
+.logout-container a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #dc3545; /* Red color for logout */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-container a:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
